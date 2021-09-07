@@ -65,6 +65,7 @@ jobs:
       - name: Test PyKDL Python 3
         run: |
           cd python_orocos_kdl
+          env
           python3 tests/PyKDLtest.py
 
   industrial_ci:
