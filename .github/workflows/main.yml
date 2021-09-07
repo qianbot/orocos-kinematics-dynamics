@@ -66,6 +66,7 @@ jobs:
         run: |
           cd python_orocos_kdl
           env
+          python3 -c "import sys; print(sys.path)"
           python3 tests/PyKDLtest.py
 
   industrial_ci:
