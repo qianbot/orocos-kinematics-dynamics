@@ -56,9 +56,6 @@ jobs:
           cmake -DCMAKE_BUILD_TYPE=${OROCOS_KDL_BUILD_TYPE} ./..
           make
           sudo make install
-      - name: Update LD_LIBRARY_PATH
-        run: |
-          sudo ldconfig
       - name: Test orocos_kdl
         run: |
           cd orocos_kdl/build
